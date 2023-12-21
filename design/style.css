@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121313;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header.landing {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+div.heading {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.topnav {
+    width: 50%;
+    display: inline-flex;
+}
+
+a.btn {
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: center;
+    color: #fff;
+    /* FF_Tool? */
+    border: 3px solid #fff;
+    width: 49%;
+    padding: 20px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+a.btn:hover,
+a.btn:active {
+    color: #000;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+img.logo {
+    position: absolute;
+    height: auto;
+    width: 4%;
+    left: 0.7%;
+    top: 1.3%;
+    border-radius: 30%;
+    /* Add Pulse_Grow SFX */
+}
+
+img.icon {
+    position: absolute;
+    height: auto;
+    width: 2.5%;
+    right: 1%;
+    top: 2%;
+    border-radius: 30%;
+    border: 3px outset rgb(139, 226, 156);
+    background-color: rgb(139, 226, 156);
+    /* FadeIN_SFX */
+    transition: border-width 0.3s linear;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+img.icon:hover,
+img.icon:active {
+    border-width: 5px;
+    border-color: #fff;
+    background-color: #d22054;
+    transition: border-color 1s ease-in, color 1s ease-in;
+    transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+div#LandingBanner {
+    background-image: url(./media/photography/header.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    height: 60%;
+}
+
+h1#BannerTitle {
+    font-size: 8rem;
+    margin-bottom: -2.70%;
+    color: rgba(194, 178, 128, 0.75);
+    font-family: "Shadows into Light", Arial, Helvetica, sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* Change Color */
+}
+
+h2#HashTag {
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(139, 226, 156);
+    position: absolute;
+    font-style: italic;
+    margin-left: 0.3%;
+    font-weight: 400;
+    font-size: 2rem;
+    opacity: 90%;
+    bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(139, 226, 156);
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+    /* Add Transition SFX Scroll */
+}
+
+/* Landing ✔ > Section_Start */
+
+section.introduction {
+    margin-top: 56.3%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.features {
+    width: 45%;
+    height: 72%;
+    margin: 0 1.5% 0 1.5%;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+img.feature {
+    width: 100%;
+    height: auto;
+    padding: 5% 5% 5% 5%;
+    background-color: rgb(27, 27, 27);
+}
+
+.copywriting h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+    margin: 1% 0 0 0;
+    padding: 0;
+}
+
+.copywriting h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4a4a4a;
+    padding: 0%;
+    margin: 2% 0 0 0;
+}
+
+/* Section X > Footer_Start */
+
+footer.retour {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 112.5%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+div.information {
+    position: absolute;
+    top: 0;
+    padding: 5%;
+    background-color: #000;
+    color: rgb(139, 226, 156);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {}
+
+div.footing {
+    background-image: url(./media/photography/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+img.home {
+    height: 10%;
+    width: 10%;
+    margin: 2%;
+}
+
+h4 {
+    position: absolute;
+    right: 0;
+    margin: 0% 0.8% 0.5% 0%;
+    color: rgba(194, 178, 128, 0.75);
+    font-size: 1.25rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+/* Footer X > Responsive_Start */
+
+@media only screen and (max-width: 27rem)
+/* Mobile > 432 (430 X 932 = "iPhone 14 Pro Max") */
+    {
+    .TopNav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50%;
+        height: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Logo {
+        position: absolute;
+        height: auto;
+        width: 12%;
+        top: 10px;
+        left: 10px;
+        border-radius: 25%;
+    }
+
+    .BTN {
+        color: rgb(139, 226, 156);
+        font-weight: bold;
+        text-decoration: none;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 4px outset rgba(137, 226, 154, 255);
+        border-radius: 30%;
+        width: 30%;
+        height: auto;
+        padding: 15px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 20%;
+    }
+
+    .Icon {
+        position: absolute;
+        height: auto;
+        width: 7%;
+        top: 7px;
+        right: 7px;
+        border-radius: 25%;
+        opacity: 75%;
+    }
+
+
+    h1 {
+        font-size: 3.5rem;
+        margin-top: 114%;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 32%;
+        padding: 0;
+        margin-left: 1px;
+    }
+
+    /*
+    #Logo looks weird
+    #Make H1 more visible
+    #Containers have huge overflow
+    */
+}
+
+/* Responsive Mobile X */
